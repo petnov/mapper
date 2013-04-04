@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Mapper\Hydration\IdentityMap | Mapper</title>
+
+	<script type="text/javascript" src="resources/combined.js?2230489249"></script>
+	<script type="text/javascript" src="elementlist.js?4053933415"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Mapper.html">Mapper<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Mapper.Hydration.html">Hydration</a>
+						</li>
+				<li><a href="namespace-Mapper.Mapping.html">Mapping</a>
+						</li>
+				<li><a href="namespace-Mapper.Source.html">Source</a>
+						</li>
+				<li><a href="namespace-Mapper.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Mapper.Hydration.IdentityMap.html">IdentityMap</a></li>
+				<li><a href="class-Mapper.Hydration.ObjectHydrator.html">ObjectHydrator</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Mapper.Hydration.Hydrator.html">Hydrator</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Mapper.Hydration.html" title="Summary of Mapper\Hydration"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class IdentityMap</h1>
+
+
+	<div class="description">
+	
+<p>Identity map for storing all hydrated objects</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Mapper.html">Mapper</a>\<a href="namespace-Mapper.Hydration.html">Hydration</a><br />
+		
+
+				<b>Author:</b>
+				Petr Novotny<br />
+		<b>Located at</b> <a href="source-class-Mapper.Hydration.IdentityMap.html#5-85" title="Go to source code">lib/hydration/IdentityMap.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getEntityInstance" id="_getEntityInstance">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEntityInstance">#</a>
+		<code><a href="source-class-Mapper.Hydration.IdentityMap.html#26-38" title="Go to source code">getEntityInstance</a>( <span>string <var>$entity</var></span>, <span>mixed <var>$primary</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get entity instance (by its primary)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get entity instance (by its primary)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code>string</code><br>$entity</dd>
+					<dt><var>$primary</var></dt>
+					<dd><code>mixed</code><br>$primary</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addEntityInstance" id="_addEntityInstance">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addEntityInstance">#</a>
+		<code><a href="source-class-Mapper.Hydration.IdentityMap.html#40-51" title="Go to source code">addEntityInstance</a>( <span>string <var>$entity</var></span>, <span>mixed <var>$primary</var></span>, <span>mixed <var>$instance</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add entity instance under ID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add entity instance under ID</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code>string</code><br>$entity</dd>
+					<dt><var>$primary</var></dt>
+					<dd><code>mixed</code><br>$primary</dd>
+					<dt><var>$instance</var></dt>
+					<dd><code>mixed</code><br>$instance</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasCollection" id="_hasCollection">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasCollection">#</a>
+		<code><a href="source-class-Mapper.Hydration.IdentityMap.html#53-62" title="Go to source code">hasCollection</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks key presence in keyMap data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks key presence in keyMap data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCollection" id="_addCollection">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCollection">#</a>
+		<code><a href="source-class-Mapper.Hydration.IdentityMap.html#64-74" title="Go to source code">addCollection</a>( <span>mixed <var>$key</var></span>, <span>string <var>$item</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add collection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add collection</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>mixed</code><br>$key</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>string</code><br>$item</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCollection" id="_getCollection">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCollection">#</a>
+		<code><a href="source-class-Mapper.Hydration.IdentityMap.html#76-84" title="Go to source code">getCollection</a>( <span>mixed <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get collection with given key</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get collection with given key</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Mapper API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Mapper\Hydration\ObjectHydrator | Mapper</title>
+
+	<script type="text/javascript" src="resources/combined.js?2230489249"></script>
+	<script type="text/javascript" src="elementlist.js?4053933415"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Mapper.html">Mapper<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Mapper.Hydration.html">Hydration</a>
+						</li>
+				<li><a href="namespace-Mapper.Mapping.html">Mapping</a>
+						</li>
+				<li><a href="namespace-Mapper.Source.html">Source</a>
+						</li>
+				<li><a href="namespace-Mapper.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Mapper.Hydration.IdentityMap.html">IdentityMap</a></li>
+				<li class="active"><a href="class-Mapper.Hydration.ObjectHydrator.html">ObjectHydrator</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Mapper.Hydration.Hydrator.html">Hydrator</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Mapper.Hydration.html" title="Summary of Mapper\Hydration"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ObjectHydrator</h1>
+
+
+	<div class="description">
+	
+<p>Hydrates objects from data, using Metadata Mapping</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Nette\Object
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Mapper\Hydration\ObjectHydrator</span></b>			
+			 implements 
+				<a href="class-Mapper.Hydration.Hydrator.html"><span>Mapper\Hydration\Hydrator</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Mapper.html">Mapper</a>\<a href="namespace-Mapper.Hydration.html">Hydration</a><br />
+		
+
+				<b>Author:</b>
+				Petr Novotny<br />
+				<b>Link:</b>
+				<a href="http://martinfowler.com/eaaCatalog/metadataMapping.html">http://martinfowler.com/eaaCatalog/metadataMapping.html</a><br />
+		<b>Located at</b> <a href="source-class-Mapper.Hydration.ObjectHydrator.html#12-199" title="Go to source code">lib/hydration/ObjectHydrator.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#42-52" title="Go to source code">__construct</a>( <span>Mapper\Mapper\Mapping\Mapping <var>$mapping</var></span>, <span>Mapper\Mapper\Hydration\IdentityMap <var>$map</var></span>, <span>Mapper\Mapper\Mapper <var>$mapper</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Construct routines</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Construct routines</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mapping</var></dt>
+					<dd><code><code><a href="class-Mapper.Mapping.Mapping.html">Mapper\Mapping\Mapping</a></code></code><br>$mapping</dd>
+					<dt><var>$map</var></dt>
+					<dd></dd>
+					<dt><var>$mapper</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimaryAttribute" id="_getPrimaryAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimaryAttribute">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#55-69" title="Go to source code">getPrimaryAttribute</a>( )</code>
+
+		<div class="description short">
+			
+<p>Method finds attribute of object which corresponds to primary key in database
+model</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Method finds attribute of object which corresponds to primary key in database
+model</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hydrate" id="_hydrate">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hydrate">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#71-127" title="Go to source code">hydrate</a>( <span>Nette\Database\Row <var>$row</var></span>, <span>dibiRow <var>$entity</var></span>, <span>mixed <var>$mappings</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$aliased</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Object hydration</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Object hydration</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code>Nette\Database\Row</code><br>$obj - Object to be filled with data</dd>
+					<dt><var>$entity</var></dt>
+					<dd><code>dibiRow</code><br>$row - row with data</dd>
+					<dt><var>$mappings</var></dt>
+					<dd></dd>
+					<dt><var>$aliased</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$obj - hydrated object<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Mapper.Hydration.Hydrator.html#_hydrate">Mapper\Hydration\Hydrator::hydrate()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hydrateCollection" id="_hydrateCollection">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hydrateCollection">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#129-157" title="Go to source code">hydrateCollection</a>( <span>array <var>$rows</var></span>, <span>mixed <var>$entity</var></span>, <span>mixed <var>$aliased</var> = <span class="php-keyword1">FALSE</span></span>, <span>mixed <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Hydate collection of objects</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Hydate collection of objects</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rows</var></dt>
+					<dd><code>array</code><br>$rows - array of Row objects</dd>
+					<dt><var>$entity</var></dt>
+					<dd></dd>
+					<dt><var>$aliased</var></dt>
+					<dd></dd>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isCollectionHydrated" id="_isCollectionHydrated">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isCollectionHydrated">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#159-168" title="Go to source code">isCollectionHydrated</a>( <span>string <var>$identityKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Is collection of objects already hydrated?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is collection of objects already hydrated?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$identityKey</var></dt>
+					<dd><code>string</code><br>$identityKey</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCollection" id="_getCollection">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Mapper.Utils.ObjectCollection.html">Mapper\Utils\ObjectCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCollection">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#170-179" title="Go to source code">getCollection</a>( <span>unknown <var>$identityKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Hydrated collection getter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Hydrated collection getter</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$identityKey</var></dt>
+					<dd><code>unknown</code><br>$identityKey</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Mapper.Utils.ObjectCollection.html">Mapper\Utils\ObjectCollection</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIdentityMap" id="_getIdentityMap">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIdentityMap">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#181-184" title="Go to source code">getIdentityMap</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEntityInstance" id="_getEntityInstance">
+
+		<td class="attributes"><code>
+			 public 
+			BaseEntity
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEntityInstance">#</a>
+		<code><a href="source-class-Mapper.Hydration.ObjectHydrator.html#186-196" title="Go to source code">getEntityInstance</a>( <span>string <var>$entity</var></span>, <span>integer <var>$primary</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get hydrated entity instance</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get hydrated entity instance</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code>string</code><br>$entity</dd>
+					<dt><var>$primary</var></dt>
+					<dd><code>integer</code><br>$primary</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>BaseEntity</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Mapper API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

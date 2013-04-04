@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","ArrayAccess"],["c","ArrayObject"],["c","Countable"],["c","Exception"],["c","InvalidArgumentException"],["c","Iterator"],["c","IteratorAggregate"],["c","LogicException"],["c","Mapper\\BaseEntity"],["c","Mapper\\Hydration\\Hydrator"],["c","Mapper\\Hydration\\IdentityMap"],["c","Mapper\\Hydration\\ObjectHydrator"],["c","Mapper\\Mapper"],["c","Mapper\\Mapping\\AnnotationMapping"],["c","Mapper\\Mapping\\ArrayMapping"],["c","Mapper\\Mapping\\Mapping"],["c","Mapper\\Mapping\\MappingNotFoundException"],["c","Mapper\\Repository"],["c","Mapper\\Source\\SQLSource"],["c","Mapper\\Utils\\AssocCollection"],["c","Mapper\\Utils\\ObjectCollection"],["c","RuntimeException"],["c","Serializable"],["c","Traversable"]];

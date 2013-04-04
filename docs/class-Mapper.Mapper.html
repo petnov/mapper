@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Mapper\Mapper | Mapper</title>
+
+	<script type="text/javascript" src="resources/combined.js?2230489249"></script>
+	<script type="text/javascript" src="elementlist.js?4053933415"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Mapper.html">Mapper<span></span></a>
+						<ul>
+				<li><a href="namespace-Mapper.Hydration.html">Hydration</a>
+						</li>
+				<li><a href="namespace-Mapper.Mapping.html">Mapping</a>
+						</li>
+				<li><a href="namespace-Mapper.Source.html">Source</a>
+						</li>
+				<li><a href="namespace-Mapper.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Mapper.BaseEntity.html">BaseEntity</a></li>
+				<li class="active"><a href="class-Mapper.Mapper.html">Mapper</a></li>
+				<li><a href="class-Mapper.Repository.html">Repository</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Mapper.html" title="Summary of Mapper"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Mapper</h1>
+
+
+	<div class="description">
+	
+<p>Data Mapper implementation</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Nette\Object
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Mapper\Mapper</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Mapper.html">Mapper</a><br />
+		
+
+				<b>Copyright:</b>
+				Petr Novotny 2013<br />
+				<b>Author:</b>
+				Petr Novotny<br />
+		<b>Located at</b> <a href="source-class-Mapper.Mapper.html#12-162" title="Go to source code">lib/Mapper.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#74-87" title="Go to source code">__construct</a>( <span>Nette\Database\Connection <var>$conn</var></span>, <span>Nette\Caching\IStorage <var>$cacheStorage</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Construct routines</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Construct routines</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$conn</var></dt>
+					<dd><code>Nette\Database\Connection</code><br>$conn</dd>
+					<dt><var>$cacheStorage</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRepository" id="_getRepository">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Mapper.Repository.html">Mapper\Repository</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRepository">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#89-118" title="Go to source code">getRepository</a>( <span>string <var>$entity</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns repository for certain entity</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns repository for certain entity</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code>string</code><br>$entity</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Mapper.Repository.html">Mapper\Repository</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDbConnection" id="_getDbConnection">
+
+		<td class="attributes"><code>
+			 public 
+			DibiConnection
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDbConnection">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#121-129" title="Go to source code">getDbConnection</a>( )</code>
+
+		<div class="description short">
+			
+<p>Database connection getter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Database connection getter</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>DibiConnection</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResultCache" id="_getResultCache">
+
+		<td class="attributes"><code>
+			 public 
+			Nette\Caching\Cache
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResultCache">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#131-139" title="Go to source code">getResultCache</a>( )</code>
+
+		<div class="description short">
+			
+<p>Result cache getter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Result cache getter</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Caching\Cache</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIdentityMap" id="_getIdentityMap">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Mapper.Hydration.IdentityMap.html">Mapper\Hydration\IdentityMap</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIdentityMap">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#141-149" title="Go to source code">getIdentityMap</a>( )</code>
+
+		<div class="description short">
+			
+<p>Identity map getter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Identity map getter</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Mapper.Hydration.IdentityMap.html">Mapper\Hydration\IdentityMap</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMapping" id="_getMapping">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMapping">#</a>
+		<code><a href="source-class-Mapper.Mapper.html#151-160" title="Go to source code">getMapping</a>( <span>string <var>$entity</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get metadata mapping of entity</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get metadata mapping of entity</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code>string</code><br>$entity</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="REPOSITORY_DOES_NOT_EXIST" id="REPOSITORY_DOES_NOT_EXIST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Mapper.Mapper.html#64-67" title="Go to source code"><b>REPOSITORY_DOES_NOT_EXIST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'Repository %s does not exist'</span></code></td>
+		<td class="description"><div>
+			<a href="#REPOSITORY_DOES_NOT_EXIST" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Exception messages</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Exception messages</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CACHE_KEY_RESULT" id="CACHE_KEY_RESULT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Mapper.Mapper.html#69-72" title="Go to source code"><b>CACHE_KEY_RESULT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'MapperResult'</span></code></td>
+		<td class="description"><div>
+			<a href="#CACHE_KEY_RESULT" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Result cache key</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Result cache key</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="dbConnection" id="$dbConnection">
+		<td class="attributes"><code>
+			protected  
+			Nette\Database\Connection
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#22-27" title="Go to source code"><var>$dbConnection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$dbConnection" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Database connection</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Database connection</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hydrator" id="$hydrator">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Mapper.Hydration.Hydrator.html">Mapper\Hydration\Hydrator</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#29-34" title="Go to source code"><var>$hydrator</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$hydrator" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Hydrator is responsible for hydrating data from source (ex.: hydrate objects
+from database rows)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Hydrator is responsible for hydrating data from source (ex.: hydrate objects
+from database rows)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="pool" id="$pool">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#36-41" title="Go to source code"><var>$pool</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$pool" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Pool for created repositories</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Pool for created repositories</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="metadataMapping" id="$metadataMapping">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Mapper.Mapping.Mapping.html">Mapper\Mapping\Mapping</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#43-48" title="Go to source code"><var>$metadataMapping</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$metadataMapping" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Implementation of metadata mappings</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Implementation of metadata mappings</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="resultCache" id="$resultCache">
+		<td class="attributes"><code>
+			protected  
+			Nette\Caching\Cache
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#50-55" title="Go to source code"><var>$resultCache</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$resultCache" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Cache storage for data results</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Cache storage for data results</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="identityMap" id="$identityMap">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Mapper.Hydration.IdentityMap.html">Mapper\Hydration\IdentityMap</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Mapper.Mapper.html#57-62" title="Go to source code"><var>$identityMap</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$identityMap" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Identity map for storing hydrated objects</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Identity map for storing hydrated objects</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Mapper API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
