@@ -127,7 +127,7 @@ class Repository extends Object
 		$this->dbConnection->query("INSERT INTO `" . $this->mapping['table'] . "`", $values);
 	
 		// set primary id
-		$idPrimary = $this->dbConnection->lastInsertId();
+		$idPrimary = $this->dbConnection->getInsertId();
 		
 		$primaryAttribute = $this->getPropertyByColumn($this->mapping['primary']);		
 		$object->{$primaryAttribute} = $idPrimary;
@@ -628,7 +628,7 @@ class Repository extends Object
 	
 	public function countSql($sql)
 	{
-		return $this->query($sql)->fetchColumn();
+		return $this->query($sql)->fetchField();
 	}
 	
 }
