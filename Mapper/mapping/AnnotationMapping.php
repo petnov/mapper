@@ -3,6 +3,7 @@
 namespace Mapper\Mapping;
 
 use Nette\Reflection\ClassType,
+	Nette\Caching\IStorage,
 	Nette\Caching\Cache,
 	Mapper\Mapper;
 
@@ -13,7 +14,9 @@ use Nette\Reflection\ClassType,
  */
 class AnnotationMapping extends Mapping 
 {
-	
+	// cache key
+    const CACHE_KEY = 'annotation-mapping';
+    
 	/**
 	 * Cache to store mapping in
 	 * 
@@ -24,12 +27,11 @@ class AnnotationMapping extends Mapping
 	/**
 	 * Construct routines
 	 * 
-	 * @param Mapper $mapper
-	 * @param unknown $cache
+	 * @param Cache $cache
 	 */
-	public function __construct(Mapper $mapper, $cache) 
+	public function __construct(IStorage $cache) 
 	{
-		$this->cache = $cache;
+		$this->cache = new Cache($cache, self::CACHE_KEY);
 	}
 	
 	/**

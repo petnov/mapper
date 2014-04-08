@@ -2,6 +2,10 @@
 
 namespace Mapper;
 
+use Mapper\Hydration\Hydrator;
+
+use Mapper\Mapping\Mapping;
+
 use Nette\Object,
 	Mapper\Hydration\ObjectHydrator,
 	Nette\Caching\Cache,
@@ -10,9 +14,8 @@ use Nette\Object,
 	Mapper\Mapping\ArrayMapping;
 
 /**
- * Data Mapper implementation
+ * Simple ORM using data mapper implementation
  *
- * @abstract
  * @copyright Petr Novotny 2013
  * @author Petr Novotny
  */
@@ -76,13 +79,12 @@ class Mapper extends Object
 	 * 
 	 * @param Nette\Database\Connection $conn
 	 */
-	public function __construct(\Nette\Database\Connection $conn, \Nette\Caching\IStorage $cacheStorage)
+	public function __construct(\Nette\Database\Connection $conn, Mapping $mapping, Hydrator $hydrator, \Nette\Caching\IStorage $cacheStorage)
 	{
 		$this->dbConnection = $conn;
+		$this->metadataMapping = $mapping;
+		$this->hydrator = $hydrator;
 		$this->identityMap = new IdentityMap();
-		//$this->metadataMapping = new ArrayMapping($this);
-		$this->metadataMapping = new AnnotationMapping($this, new Cache($cacheStorage, 'annotation-mapping'));
-		$this->hydrator = new ObjectHydrator($this->metadataMapping, $this->identityMap, $this);
 		$this->resultCache = new Cache($cacheStorage, self::CACHE_KEY_RESULT);
 	}
 
